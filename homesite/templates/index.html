@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %} HandSpell {% endblock %}</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href=" {% static 'styles/bootstrap.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/font-awesome.min.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/nicepage.css' %} ">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href=" {% static 'styles/navbar-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/banner-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/features-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/learn-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/sign-text-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/footer-style.css' %} ">
+
+	<!-- Favicons -->
+	<link href=" {% static 'img/fav-icon.png' %} " rel="icon" type="image/jpg">
+	
+
+	<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- font-family: 'Mulish', sans-serif; -->
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		
+		<!-- font-family: 'Space Mono', monospace; -->
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">  
+
+	 
+</head>
+
+<body onload=loadCamera()>
+	<!-- Header and Navbar Section-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<a class="navbar-brand" href=" {% url 'index' %} "><img src="{% static 'image/Logo.png' %} " alt=""> HandSpell</a>
+
+					<!-- Hamburger toggle -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<!-- Header Links -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href=" {% url 'index' %} ">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href=" #features-section ">Features</a></li>
+							<li class="nav-item"><a class="nav-link" href=" #learn-section ">Learn</a></li>
+							<li class="nav-item"><a class="nav-link" href=" #translate-section ">Translate</a></li>
+						</ul>
+					</div>
+				</div>	
+			</nav>
+		</div>
+	</header>
+	<!-- End of Header and Navbar Section -->
+
+    <!-- Banner Section-->
+	<div class="banner-wrap">
+		
+		<div class="banner_area">
+			<div class="banner_contents">
+				<div class="banner_left"  data-aos="fade-left"  data-aos-duration="800">
+					<h2>With <br> HandSpell <br> You can <br> <span>Communicate</span></h2>
+				</div>
+				<div class="banner_right" data-aos="fade-right" data-aos-duration="1000">
+					<img src=" {% static 'image/banner.png' %} " alt="">
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- End of Banner Section -->
+	
+
+	<!-- Feature Section -->
+	<div class="u-body u-xl-mode" id="features-section">	
+		<section class="u-align-center u-clearfix u-grey-5 u-section-1" id="carousel_bde8">
+			<div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+			<h1 class="u-align-left u-text u-text-palette-1-base u-text-1" id="features-heading"> Know about the <br> features of HandSpell </h1>
+			<img class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" src=" {% static 'image/giphy.gif' %} " alt="" data-image-width="845" data-image-height="856" style="margin-left: -150px;">
+			<div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-18 u-layout-wrap u-layout-wrap-1">
+				<div class="u-gutter-0 u-layout">
+				<div class="u-layout-row">
+					<div class="u-size-30">
+					<div class="u-layout-col">
+						<div class="u-align-center u-container-style u-layout-cell u-radius-10 u-size-60 u-white u-layout-cell-1">
+						<div class="feature-1 u-container-layout u-valign-middle u-container-layout-1">							
+							<lt-highlighter style="display: none; width: 311px; margin-right: -10px; margin-left: -10px; z-index: 1 !important;">
+							<lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 197px; height: 36px; transform: none !important; transform-origin: 98.4375px 18px !important; zoom: 1 !important; margin-top: 25px; margin-left: 23px;">
+								<lt-div class="lt-highlighter__scroll-element" style="top: 0px; left: 0px; width: 197px; height: 36px;"></lt-div>
+							</lt-div>
+							</lt-highlighter>
+							<div class="feauture-container1" style="display: flex; justify-content: center; align-items: center;">
+								<img src=" {% static 'image/learn.png' %} " alt="learn language" style="width: 40%;">
+							</div>
+							<h3 class="u-text u-text-default u-text-palette-1-base u-text-2"> Learn the language</h3>
+							<p class="u-text u-text-default u-text-3"> Take a quick look at the manual alphabets in American Sign Language and practice the signs.</p>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="u-size-30">
+					<div class="u-layout-col">
+						<div class="u-align-center u-container-style u-layout-cell u-radius-10 u-size-20 u-white u-layout-cell-2">
+						<div class="feature-2 u-container-layout u-valign-middle u-container-layout-2">
+							<div class="feauture-container2" style="display: flex; justify-content: center; align-items: center;">
+								<img src=" {% static 'image/stc.png' %} " alt="learn language" style="width: 40%;">
+							</div>
+							<h3 class="u-text u-text-default u-text-palette-1-base u-text-4"> Sign To Text Conversion</h3>
+							<p class="u-text u-text-default u-text-5"> Convert your American Sign Language alphabets gesture into text through live video feed.</p>
+						</div>
+						</div>
+						<div class="u-align-center u-container-style u-layout-cell u-radius-10 u-size-40 u-white u-layout-cell-3">
+						<div class="feature-3 u-container-layout u-valign-middle u-container-layout-3"  id="ttsc">
+							<div class="feauture-container3" style="display: flex; justify-content: center; align-items: center;">
+								<img src=" {% static 'image/tsc.png' %} " alt="learn language" style="width: 40%;">
+							</div>
+							<h3 class="u-text u-text-default u-text-palette-1-base u-text-6"> Search for signs</h3>
+							<lt-highlighter style="display: none; z-index: 1 !important; width: 264px; margin-right: auto; margin-left: auto;">
+							<lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 274px; height: 77px; transform: none !important; transform-origin: 136.75px 38.3906px !important; zoom: 1 !important; margin-top: 13px; margin-left: 30px;">
+								<lt-div class="lt-highlighter__scroll-element" style="top: 0px; left: 0px; width: 274px; height: 77px;"></lt-div>
+							</lt-div>
+							</lt-highlighter>
+							<p class="text-to-sign u-text u-text-default u-text-7"> Write some letter and the corresponding ASL sign will be shown.</p>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<img class="u-hidden-sm u-hidden-xs u-image u-image-contain u-image-default u-image-2" src=" {% static 'image/comments.gif' %} " alt="small feauture" >
+			</div>
+	  </section>
+	</div>  
+	<!-- End of Feature Section -->	
+
+
+	<!-- Learn Section -->
+	
+	<div class="learn-wrap" id="learn-section">
+		<div class="search-area">
+			<div class="search-name"> Search a letter </div>
+			<div class="s003">
+				<form action="{% url 'search'%}" method="GET">
+				  <div class="inner-form">          
+					<div class="input-field second-wrap">
+					  <input name = "query" id="search" class="form-control" type="text" placeholder="Enter a letter" />
+					</div>
+					<div class="input-field third-wrap">
+					  <button class="btn-search" type="submit">
+						<svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						  <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+						</svg>
+					  </button>
+					</div>
+				  </div>
+				</form>
+			  </div>
+		</div>
+	</div>	
+	
+		<div class = "products">
+			<div class = "prod-container">
+				<div class = "product-items">
+					<!-- single product -->
+					{% for sign in sign_list %}
+					<div class = "product">
+							<div class = "product-img">
+								<img src = "{{ sign.image.url }}" alt = "sign">
+								<div class="label-sign">
+									<!-- {{ sign.name }} -->
+								</div>
+							</div>
+					</div>
+					{% endfor %}
+					<!-- end of single product -->
+					
+
+
+					</div>
+				</div>
+			</div>
+		
+			
+		</div>
+	
+	</div>
+
+	<!-- End of Learn Section -->
+
+
+	<!-- Sign to Text Section -->
+
+	<div class="sign-wrap" id="translate-section">
+		<h1>Sign to Text Conversion</h1>
+		<div class="sign-conversion">
+			<a href="{% url 'runModel' %}" name = "runModel" class="btn btn-primary">Click to start predicting sign</a>
+		</div>
+        
+	</div>
+
+	<!-- End of Sign to Text Section -->
+
+
+
+
+	<!-- Footer Section -->
+	<footer class="footer-59391">
+        <div class="border-bottom pb-5 mb-4">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-3">
+                
+              </div>
+              <div class="col-lg-6 text-lg-center">
+                <ul class="list-unstyled nav-links nav-left mb-4 mb-lg-0">
+                  <li><a href="{% url 'index' %}">Home</a></li>
+                  <li><a href="#features-section">Features</a></li>
+                  <li><a href="#learn-section">Learn</a></li>
+                  <li><a href="#translate-section">Translate</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-center site-logo order-1 order-lg-2 mb-3 mb-lg-0" id="bot-logo">
+              <a href="#" class="m-0 p-0 bottom-logo"><img src="{% static 'image/Logo.png' %} " alt="">HandSpell</a>
+            </div>
+            <div class="col-lg-4 order-1 order-lg-1 mb-1 mb-lg-0">
+                <ul class="list-unstyled nav-links social nav-left text-lg-left">
+                    <li><a href="https://www.instagram.com/saman_hrka/" id ="social-ID"><img src=" {% static './image/insta.svg' %} " alt="insta"></a></li>
+                    <li><a href="https://www.facebook.com/saman.tamrakar/" id ="social-ID"><img src=" {% static './image/fb.svg' %} " alt="insta"></a></li>
+                    <li><a href="https://github.com/saman-des" id ="social-ID"><img src=" {% static './image/git.svg' %} " alt="insta"></a></li>
+                  </ul>
+            </div>
+            
+            <div class="footer-copy col-lg-4 text-lg-right order-3 order-lg-3">
+              <p>&copy; 2022. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+
+    </footer>
+
+
+	<!-- End of Footer Section -->
+
+	<!-- JavaScripts -->
+	<script src=" {% static 'javascript/jquery-3.2.1.min.js' %} "></script>
+	<script src=" {% static 'javascript/popper.js' %} "></script>
+	<script src=" {% static 'javascript/bootstrap.min.js' %} "></script>
+	<script src=" {% static 'javascript/main.js' %} "></script>
+	<script src=" {% static 'javascript/search-bar.js' %} "></script>
+
+</body>
+<script>
+
+</script>
+</html>

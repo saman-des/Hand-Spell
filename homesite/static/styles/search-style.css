@@ -1,0 +1,25 @@
+.container{
+    margin: 100px auto;
+}
+
+.container button{
+    border-radius: 5px;
+    background-color: #4861df;
+    margin-bottom: 50px;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+}
+.container h1{
+    font: 700 32px 'Mulish', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #4861df;
+
+}
+
+.sign-name{
+    font: 800 64px 'Space Mono', monospace;
+    color: #fff;
+}

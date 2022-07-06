@@ -1,0 +1,65 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %} HandSpell {% endblock %}</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href=" {% static 'styles/bootstrap.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/font-awesome.min.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/nicepage.css' %} ">
+    
+	<!-- CSS -->
+	<link rel="stylesheet" href=" {% static 'styles/search-style.css' %} ">
+    <link rel="stylesheet" href=" {% static 'styles/navbar-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/banner-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/features-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/learn-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/sign-text-style.css' %} ">
+	<link rel="stylesheet" href=" {% static 'styles/footer-style.css' %} ">
+    
+	<!-- Favicons -->
+	<link href=" {% static 'img/fav-icon.png' %} " rel="icon" type="image/jpg">
+	
+
+	<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- font-family: 'Mulish', sans-serif; -->
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		
+		<!-- font-family: 'Space Mono', monospace; -->
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">  
+</head>
+<body>
+    
+
+    <div class="container">
+        <a  href=" {% url 'index' %} "><- Go back</a>
+        <h1>Hand Sign you searched for:</h1>
+        {% if items %}
+
+        {% for item in items %}
+        <div class="search-area">
+                <div class="sign-name">
+                    {{ item.name }}
+                </div>    
+                <img src="{{ item.image.url }}" style="width: 100px;">
+		</div>
+                   
+        {% endfor %}
+
+        {% else %}
+        <div class="error-message">
+            <p>No hand signs</p>
+        </div> 
+        
+        
+        {% endif %}
+
+    </div>
+</body>
+</html>

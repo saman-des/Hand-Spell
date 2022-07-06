@@ -1,0 +1,104 @@
+.sign-wrap{
+    width: 80%;
+    margin: 150px auto;
+}
+
+.sign-wrap h1{
+    font: 800 56px 'Mulish', sans-serif;
+    color: var(--id-primary);
+}
+
+.sign-conversion{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);   
+    border-radius: 15px;
+    height: 50px;
+}
+
+.left-sign{
+    width: 50%;
+}
+
+.right-sign{
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.webcam-area{
+    background-color: white;
+    margin: 2%;
+    height: 96%;
+}
+
+.char-text{
+    color: var(--id-black);
+    font: 700 36px 'Space Mono', monospace;
+    margin-bottom: 5%;
+}
+
+.sent-area{
+    margin-top: 10%;
+}
+
+
+.tsign-wrap{
+    width: 80%;
+    margin: 150px auto;
+}
+
+.tsign-wrap h1{
+    font: 800 56px 'Mulish', sans-serif;
+    color: var(--id-primary);
+}
+
+.tsign-conversion{
+    margin: 50px 0 100px 0;
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    min-height: 500px;    
+    border-radius: 15px;
+}
+.tsign-conversion{
+    margin: 50px 0 100px 0;
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    min-height: 500px;    
+    border-radius: 15px;
+}
+
+.right-tsign{
+    width: 50%;
+}
+
+.left-tsign{
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.webcam-area{
+    background-color: white;
+    margin: 2%;
+    height: 96%;
+}
+
+.tchar-text{
+    color: var(--id-black);
+    font: 700 36px 'Space Mono', monospace;
+    margin-bottom: 5%;
+}
+
+
+@media (max-width: 900px) {
+    .sign-conversion{
+        flex-direction: column;
+    }
+}
